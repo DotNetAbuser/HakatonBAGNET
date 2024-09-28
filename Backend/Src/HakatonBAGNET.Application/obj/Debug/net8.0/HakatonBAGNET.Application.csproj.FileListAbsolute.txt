@@ -1,0 +1,17 @@
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Application.deps.json
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Application.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Application.pdb
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Domain.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Domain.pdb
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.csproj.AssemblyReference.cache
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.AssemblyInfoInputs.cache
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.AssemblyInfo.cs
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.csproj.CoreCompileInputs.cache
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonB.5E3C7FA2.Up2Date
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\refint\HakatonBAGNET.Application.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\HakatonBAGNET.Application.pdb
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\obj\Debug\net8.0\ref\HakatonBAGNET.Application.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Models.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Application\bin\Debug\net8.0\HakatonBAGNET.Models.pdb

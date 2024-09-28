@@ -1,0 +1,20 @@
+﻿global using System.Linq.Expressions;
+global using HakatonBAGNET.Application.IRepositories.Base;
+global using HakatonBAGNET.Domain.Context;
+global using HakatonBAGNET.Domain.Entities.Base;
+global using HakatonBAGNET.Models.Common;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Query;
+global using HakatonBAGNET.Application.IUoW;
+global using Microsoft.Extensions.DependencyInjection;
+global using HakatonBAGNET.Infra.UoF;
+global using HakatonBAGNET.Application.IRepositories;
+global using HakatonBAGNET.Application.IServices;
+global using HakatonBAGNET.Domain.Entities;
+global using Infrastructure.Repositories.Base;
+global using HakatonBAGNET.Infra.Repositories;
+global using HakatonBAGNET.Infra.Services;
+global using HakatonBAGNET.Models.Requests;
+global using HakatonBAGNET.Models.Responses;
+global using HakatonBAGNET.Models.Result;
+

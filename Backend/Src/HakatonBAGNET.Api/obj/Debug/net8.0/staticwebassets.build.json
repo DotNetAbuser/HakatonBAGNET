@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vKM45FpklX6NCSJauS2fxZwtf6mZXmLDZL1t4NHS1gA=",
+  "Source": "HakatonBAGNET.Api",
+  "BasePath": "_content/HakatonBAGNET.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
