@@ -17,3 +17,4 @@ C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Infra\obj\Debug\n
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Infra\obj\Debug\net8.0\ref\HakatonBAGNET.Infra.dll
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Infra\bin\Debug\net8.0\HakatonBAGNET.Models.dll
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Infra\bin\Debug\net8.0\HakatonBAGNET.Models.pdb
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Infra\obj\Debug\net8.0\HakatonBAGNET.Infra.sourcelink.json

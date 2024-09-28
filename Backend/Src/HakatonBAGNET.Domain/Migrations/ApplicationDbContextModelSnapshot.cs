@@ -118,35 +118,35 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4575),
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3110),
                             IsDeleted = false,
                             Title = "Математический анализ"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4581),
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3118),
                             IsDeleted = false,
                             Title = "Линейная алгебра"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4582),
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3120),
                             IsDeleted = false,
                             Title = "Философия"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4583),
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3121),
                             IsDeleted = false,
                             Title = "История России"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4584),
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3122),
                             IsDeleted = false,
                             Title = "Физика"
                         });
@@ -311,6 +311,128 @@ namespace HakatonBAGNET.Domain.Migrations
                         .IsUnique();
 
                     b.ToTable("users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 10000,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6053),
+                            FirstName = "Сережа",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Батист",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6062),
+                            FirstName = "Илья",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Олейник",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6064),
+                            FirstName = "Кашелот",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Кашов",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6066),
+                            FirstName = "Андрей",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Чуба",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6067),
+                            FirstName = "Глеб",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Сергеев",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6070),
+                            FirstName = "Анастасия",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Каторга",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6071),
+                            FirstName = "Алена",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "БэбиБон",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6072),
+                            FirstName = "Маст",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Хэв",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6074),
+                            FirstName = "Аленка",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Радушная",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6076),
+                            FirstName = "Каша",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Бэбибонов",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6077),
+                            FirstName = "Чупачупс",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Архангельский",
+                            PointsCount = 0
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6078),
+                            FirstName = "Кама",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Пуля",
+                            PointsCount = 0
+                        });
                 });
 
             modelBuilder.Entity("HakatonBAGNET.Domain.Entities.AnswerEntity", b =>

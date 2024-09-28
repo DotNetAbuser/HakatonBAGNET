@@ -9,3 +9,4 @@ C:\Users\ilyao\Desktop\HakatonBAGNET\Shared\Src\HakatonBAGNET.Models\obj\Debug\n
 C:\Users\ilyao\Desktop\HakatonBAGNET\Shared\Src\HakatonBAGNET.Models\obj\Debug\net8.0\refint\HakatonBAGNET.Models.dll
 C:\Users\ilyao\Desktop\HakatonBAGNET\Shared\Src\HakatonBAGNET.Models\obj\Debug\net8.0\HakatonBAGNET.Models.pdb
 C:\Users\ilyao\Desktop\HakatonBAGNET\Shared\Src\HakatonBAGNET.Models\obj\Debug\net8.0\ref\HakatonBAGNET.Models.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Shared\Src\HakatonBAGNET.Models\obj\Debug\net8.0\HakatonBAGNET.Models.sourcelink.json

@@ -10,3 +10,4 @@ C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\refint\HakatonBAGNET.Domain.dll
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.pdb
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\ref\HakatonBAGNET.Domain.dll
+C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.sourcelink.json

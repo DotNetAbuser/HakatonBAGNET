@@ -15,7 +15,10 @@ public class CategoryService : ICategoryService
 
     public async Task<IResult<IEnumerable<CategoryResponse>>> GetAllAsync(CancellationToken cancellationToken)
     {
-        var categoriesEntities = await _categoryRepository.GetAllAsync(cancellationToken);
+        var categoriesEntities = await _categoryRepository
+            .GetAllAsync(
+                orderBy: x => x.OrderBy(c => c.CreatedAt),
+                cancellationToken: cancellationToken);
         var categoriesResponse = categoriesEntities
             .Select(categoryEntity => 
                 new CategoryResponse(categoryEntity.Id, categoryEntity.Title));

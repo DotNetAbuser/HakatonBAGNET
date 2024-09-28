@@ -37,7 +37,6 @@
             query = orderBy is null ? query : orderBy(query);
 
             return await query
-                .OrderBy(e => e.CreatedAt)
                 .ToListAsync(cancellationToken);
         }
         
@@ -58,10 +57,9 @@
             query = predicate is null ? query : query.Where(predicate);
             query = orderBy is null ? query : orderBy(query);
             
-            countQuery = predicate is null ? countQuery  : countQuery.Where(predicate);
+            countQuery = predicate is null ? countQuery : countQuery.Where(predicate);
         
             var list = await query
-                .OrderBy(e => e.CreatedAt)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync(cancellationToken);
