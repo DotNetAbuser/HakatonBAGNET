@@ -6,4 +6,6 @@ public interface IQuestionService
         int pageNumber, int pageSize,
         int categoryId, 
         CancellationToken cancellationToken);
+
+    Task<IResult> CreateAsync(CreateQuestionRequest request, CancellationToken cancellationToken);
 }

@@ -29,6 +29,14 @@ public class UserController : BaseController
             pageNumber, pageSize, cancellationToken));
     }
 
+    [HttpGet("{id:int}")]
+    public async Task<IActionResult> GetByIdAsync(
+        int id, 
+        CancellationToken cancellationToken = default)
+    {
+        return Ok(await _userService.GetByIdAsync(id, cancellationToken));
+    }
+    
     [HttpPost("add-telegram-user")]
     public async Task<IActionResult> AddTelegramUserAsync(
         CreateUserRequest request,
@@ -36,5 +44,7 @@ public class UserController : BaseController
     {
         return Ok(await _userService.AddUserAsync(request, cancellationToken));
     }
+    
+    
     
 }

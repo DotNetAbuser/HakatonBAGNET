@@ -10,8 +10,11 @@ public interface IUserService
         int pageNumber, int pageSize, 
         string? searchTerms, 
         CancellationToken cancellationToken);
+    
+    Task<IResult<UserResponse>> GetByIdAsync(int id, CancellationToken cancellationToken);
 
     Task<IResult> AddUserAsync(
         CreateUserRequest request, 
         CancellationToken cancellationToken);
+
 }

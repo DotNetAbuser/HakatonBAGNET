@@ -2,11 +2,14 @@
 
 public class QuestionService : IQuestionService
 {
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IQuestionRepository _questionRepository;
 
     public QuestionService(
+        IUnitOfWork unitOfWork,
         IQuestionRepository questionRepository)
     {
+        _unitOfWork = unitOfWork;
         _questionRepository = questionRepository;
     }
     
@@ -36,5 +39,19 @@ public class QuestionService : IQuestionService
         var paginatedResponse = new PaginatedData<QuestionResponse>(
             questionsResponse, totalCount);
         return await Result<PaginatedData<QuestionResponse>>.SuccessAsync(paginatedResponse);
+    }
+
+    public async Task<IResult> CreateAsync(CreateQuestionRequest request, CancellationToken cancellationToken)
+    {
+        var questionEntity = new QuestionEntity(
+            request.CategoryId,
+            request.UserId, 
+            request.QuestionContent,
+            request.CorrectPointsCount,
+            request.IncorrectPointsCount);
+        
+        await _questionRepository.AddAsync(questionEntity, cancellationToken);
+        await _unitOfWork.SaveChangesAsync(cancellationToken);
+        return await Result.SuccessAsync();
     }
 }

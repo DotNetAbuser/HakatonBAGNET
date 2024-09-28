@@ -58,6 +58,24 @@ public class UserService : IUserService
             usersWithPointsResponse, totalCount);
         return await Result<PaginatedData<UserResponse>>.SuccessAsync(paginatedResponse);
     }
+    
+    public async Task<IResult<UserResponse>> GetByIdAsync(
+        int id, 
+        CancellationToken cancellationToken)
+    {
+        var userEntity = await _userRepository.GetByIdAsync(id, cancellationToken);
+        if (userEntity == null)
+        {
+            return await Result<UserResponse>.SuccessAsync("Пользователь с данным идентификатором не найден!");
+        }
+
+        var userResponse = new UserResponse(
+            userEntity.Id,
+            userEntity.FirstName,
+            userEntity.LastName,
+            userEntity.PointsCount);
+        return await Result<UserResponse>.SuccessAsync(userResponse);
+    }
 
     public async Task<IResult> AddUserAsync(CreateUserRequest request, CancellationToken cancellationToken)
     {

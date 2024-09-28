@@ -3,14 +3,12 @@
 public class QuestionEntity : BaseEntity<Guid>
 {
     public QuestionEntity(
-        Guid id,
         int categoryId,
         int userId,
         string questionContent,
         int correctPointsCount,
         int incorrectPointsCount)
     {
-        Id = id;
         CategoryId = categoryId;
         UserId = userId;
         QuestionContent = questionContent;

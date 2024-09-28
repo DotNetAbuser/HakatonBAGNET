@@ -19,4 +19,15 @@ public class QuestionController : BaseController
     {
         return Ok(await _questionService.GetPaginatedByCategoryId(pageNumber, pageSize, categoryId, cancellationToken));
     }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateAsync(
+        CreateQuestionRequest request, 
+        CancellationToken cancellationToken = default )
+    {
+        return Ok(await _questionService.CreateAsync(request, cancellationToken));
+    }
+    
+    
+    
 }
