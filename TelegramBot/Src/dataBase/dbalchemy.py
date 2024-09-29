@@ -6,6 +6,8 @@ from sqlalchemy import create_engine, MetaData, Column, Integer
 from sqlalchemy.orm import sessionmaker
 
 from sqlalchemy import create_engine, MetaData, Table, select
+from TelegramBot.Src.models.category import Category
+
 
 class Singleton(type):
     def __init__(cls, names, bases, attrs, **kwargs):
@@ -53,3 +55,19 @@ class DBManager(metaclass=Singleton):
             print(f"Данные из таблицы {table_name}:")
             for row in result:
                 print(row)
+
+    def get_categories_ALC(self):
+        """
+        Получение категорий с помощью SQLAlchemy ORM
+        :return:
+        """
+
+        categories = self._session.query(Category).all()
+
+        # Выводим данные
+        for category in categories:
+            print(f"Category ID: {category.category_id}, Title: {category.title}")
+
+        # Закрываем сессию
+        self.close()
+

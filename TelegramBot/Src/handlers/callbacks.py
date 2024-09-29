@@ -1,15 +1,33 @@
 import json
 
 import requests
-
-from TelegramBot.Src.ManagerAPI.get_request import get_response, deserializer
-from TelegramBot.Src.KeyBoards import kbn, kb1, kbn2, kb2, kb0, kb3, ask_question
 from aiogram import F
 from aiogram import types
 
+from TelegramBot.Src.KeyBoards import kbn, kb1, kbn2, kb2, kb0, ask_question
+from TelegramBot.Src.ManagerAPI.get_request import get_response, deserializer
+
+from aiogram.fsm.context import FSMContext
+
+temp_id = 1
 
 async def handle_my_vopr(callback: types.CallbackQuery):
-    await callback.message.answer("Ожидайте ответ от БД по вашим вопросам", reply_markup=kbn.as_markup())
+    user_id = callback.from_user.id
+
+    api_url = f'http://localhost:8001/api/Question/get-paginated-by-user-id/{user_id}?pageNumber=1&pageSize=100'
+
+    response = deserializer(get_response(api_url).text)
+    question_list = response['data']['list']
+    message_for_user = ''
+    for question in question_list:
+        message_for_user += (
+            f'\nКатегория: {question["categoryTitle"]}.'
+            f'\nТекст вопроса:\n«{question["questionContent"]}»'
+            f'\nНаграда: {question["correctPointsCount"]} '
+            f'Штраф: {question["incorrectPointsCount"]}\n'
+        )
+
+    await callback.message.answer(f"Ваши вопросы:\n {message_for_user}", reply_markup=kbn.as_markup())
     await callback.message.delete()
 
 
@@ -59,9 +77,26 @@ async def handle_vopr(callback: types.CallbackQuery):
     await callback.message.delete()
 
 
-async def handle_subject_vopr(callback: types.CallbackQuery):
+async def handle_subject_vopr(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.answer("Введите ваш вопрос:")
     await callback.message.delete()
+
+
+async def handle_message(message: types.Message):
+    api_url = 'http://localhost:8001/api/Question'
+
+    json_data = {
+        'user_id': message.from_user.id,
+        'category_id': temp_id,
+        'question_content': message.text,
+        'correct_points_count': 1,
+        "incorrect_points_count": -1,
+    }
+
+    json_data = json.dumps(json_data)
+    requests.post(api_url, data=json_data, headers={'Content-Type': 'application/json'})
+
+    await message.answer(f"Ваше сообщение обработано!")
 
 
 async def handle_otv(callback: types.CallbackQuery):
@@ -87,3 +122,4 @@ def register(dp):
     dp.callback_query.register(handle_back, F.data == 'back1')
     dp.callback_query.register(handle_back, F.data == 'back2')
     dp.callback_query.register(handle_back, F.data == 'back3')
+    dp.message.register(handle_message, lambda message: message.content_type == types.ContentType.TEXT)
