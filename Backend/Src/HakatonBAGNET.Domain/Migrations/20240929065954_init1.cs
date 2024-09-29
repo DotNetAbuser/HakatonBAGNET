@@ -1,4 +1,8 @@
-﻿#nullable disable
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+
+#nullable disable
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
@@ -155,11 +159,30 @@ namespace HakatonBAGNET.Domain.Migrations
                 columns: new[] { "category_id", "created_at", "deleted_at", "is_deleted", "title", "updated_at" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4575), null, false, "Математический анализ", null },
-                    { 2, new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4581), null, false, "Линейная алгебра", null },
-                    { 3, new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4582), null, false, "Философия", null },
-                    { 4, new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4583), null, false, "История России", null },
-                    { 5, new DateTime(2024, 9, 28, 12, 46, 12, 827, DateTimeKind.Utc).AddTicks(4584), null, false, "Физика", null }
+                    { 1, new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6389), null, false, "Математический анализ", null },
+                    { 2, new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6395), null, false, "Линейная алгебра", null },
+                    { 3, new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6396), null, false, "Философия", null },
+                    { 4, new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6398), null, false, "История России", null },
+                    { 5, new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6399), null, false, "Физика", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "users",
+                columns: new[] { "user_id", "created_at", "deleted_at", "first_name", "is_active", "is_deleted", "last_name", "points_count", "updated_at" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7784), null, "Илья", true, false, "Олейник", 0, null },
+                    { 2, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7786), null, "Кашелот", true, false, "Кашов", 0, null },
+                    { 3, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7788), null, "Андрей", true, false, "Чуба", 0, null },
+                    { 4, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7789), null, "Глеб", true, false, "Сергеев", 0, null },
+                    { 5, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7792), null, "Анастасия", true, false, "Каторга", 0, null },
+                    { 6, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7793), null, "Алена", true, false, "БэбиБон", 0, null },
+                    { 7, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7794), null, "Маст", true, false, "Хэв", 0, null },
+                    { 8, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7796), null, "Аленка", true, false, "Радушная", 0, null },
+                    { 9, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7798), null, "Каша", true, false, "Бэбибонов", 0, null },
+                    { 10, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7799), null, "Чупачупс", true, false, "Архангельский", 0, null },
+                    { 11, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7801), null, "Кама", true, false, "Пуля", 0, null },
+                    { 10000, new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7778), null, "Сережа", true, false, "Батист", 0, null }
                 });
 
             migrationBuilder.CreateIndex(

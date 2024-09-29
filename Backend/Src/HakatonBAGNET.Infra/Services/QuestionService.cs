@@ -41,6 +41,31 @@ public class QuestionService : IQuestionService
         return await Result<PaginatedData<QuestionResponse>>.SuccessAsync(paginatedResponse);
     }
 
+    public async Task<IResult<PaginatedData<QuestionResponse>>> GetPaginatedByUserId(int pageNumber, int pageSize, int userId, CancellationToken cancellationToken)
+    {
+        var (questionsEntities, totalCount) = await _questionRepository
+            .GetPaginatedAsync(
+                pageNumber: pageNumber,
+                pageSize: pageSize,
+                predicate: c => c.UserId == userId,
+                include: x => x.Include(q => q.Category),
+                cancellationToken: cancellationToken);
+
+        var questionsResponse = questionsEntities
+            .Select(questionEntity => 
+                new QuestionResponse(
+                    questionEntity.Id,
+                    questionEntity.Category.Title,
+                    questionEntity.QuestionContent,
+                    questionEntity.CorrectPointsCount,
+                    questionEntity.IncorrectPointsCount,
+                    questionEntity.IsModerated,
+                    questionEntity.IsActive));
+        var paginatedResponse = new PaginatedData<QuestionResponse>(
+            questionsResponse, totalCount);
+        return await Result<PaginatedData<QuestionResponse>>.SuccessAsync(paginatedResponse);
+    }
+
     public async Task<IResult> CreateAsync(CreateQuestionRequest request, CancellationToken cancellationToken)
     {
         var questionEntity = new QuestionEntity(

@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HakatonBAGNET.Domain.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240928182848_seedUserData")]
-    partial class seedUserData
+    [Migration("20240929065954_init1")]
+    partial class init1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -121,35 +121,35 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3110),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6389),
                             IsDeleted = false,
                             Title = "Математический анализ"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3118),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6395),
                             IsDeleted = false,
                             Title = "Линейная алгебра"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3120),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6396),
                             IsDeleted = false,
                             Title = "Философия"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3121),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6398),
                             IsDeleted = false,
                             Title = "История России"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 933, DateTimeKind.Utc).AddTicks(3122),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 325, DateTimeKind.Utc).AddTicks(6399),
                             IsDeleted = false,
                             Title = "Физика"
                         });
@@ -319,7 +319,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 10000,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6053),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7778),
                             FirstName = "Сережа",
                             IsActive = true,
                             IsDeleted = false,
@@ -329,7 +329,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6062),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7784),
                             FirstName = "Илья",
                             IsActive = true,
                             IsDeleted = false,
@@ -339,7 +339,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6064),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7786),
                             FirstName = "Кашелот",
                             IsActive = true,
                             IsDeleted = false,
@@ -349,7 +349,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6066),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7788),
                             FirstName = "Андрей",
                             IsActive = true,
                             IsDeleted = false,
@@ -359,7 +359,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6067),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7789),
                             FirstName = "Глеб",
                             IsActive = true,
                             IsDeleted = false,
@@ -369,7 +369,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6070),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7792),
                             FirstName = "Анастасия",
                             IsActive = true,
                             IsDeleted = false,
@@ -379,7 +379,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6071),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7793),
                             FirstName = "Алена",
                             IsActive = true,
                             IsDeleted = false,
@@ -389,7 +389,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6072),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7794),
                             FirstName = "Маст",
                             IsActive = true,
                             IsDeleted = false,
@@ -399,7 +399,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6074),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7796),
                             FirstName = "Аленка",
                             IsActive = true,
                             IsDeleted = false,
@@ -409,7 +409,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6076),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7798),
                             FirstName = "Каша",
                             IsActive = true,
                             IsDeleted = false,
@@ -419,7 +419,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6077),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7799),
                             FirstName = "Чупачупс",
                             IsActive = true,
                             IsDeleted = false,
@@ -429,7 +429,7 @@ namespace HakatonBAGNET.Domain.Migrations
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2024, 9, 28, 18, 28, 47, 934, DateTimeKind.Utc).AddTicks(6078),
+                            CreatedAt = new DateTime(2024, 9, 29, 6, 59, 54, 326, DateTimeKind.Utc).AddTicks(7801),
                             FirstName = "Кама",
                             IsActive = true,
                             IsDeleted = false,

@@ -11,13 +11,22 @@ public class QuestionController : BaseController
         _questionService = questionService;
     }
 
-    [HttpGet("get-paginated-by-category_id/{categoryId}")]
+    [HttpGet("get-paginated-by-category_id/{categoryId:int}")]
     public async Task<IActionResult> GetPaginatedByCategoryIdAsync(
         int pageNumber, int pageSize,
         int categoryId, 
         CancellationToken cancellationToken = default)
     {
         return Ok(await _questionService.GetPaginatedByCategoryId(pageNumber, pageSize, categoryId, cancellationToken));
+    }
+
+    [HttpGet("get-paginated-by-user-id/{userId:int}")]
+    public async Task<IActionResult> GetPaginatedByUserId(
+        int pageNumber, int pageSize,
+        int userId, 
+        CancellationToken cancellationToken = default)
+    {
+        return Ok(await _questionService.GetPaginatedByUserId(pageNumber, pageSize, userId, cancellationToken));
     }
 
     [HttpPost]

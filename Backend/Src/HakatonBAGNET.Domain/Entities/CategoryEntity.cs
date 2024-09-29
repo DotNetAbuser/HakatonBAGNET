@@ -7,9 +7,9 @@ public class CategoryEntity : BaseEntity<int>
         string title)
     {
         Id = id;
-        Title = title;  
+        Title = title;
     }
-
+    
     public CategoryEntity(
         string title)
     {

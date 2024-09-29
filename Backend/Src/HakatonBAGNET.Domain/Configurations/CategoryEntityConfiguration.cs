@@ -13,12 +13,9 @@ public class CategoryEntityConfiguration
         builder
             .HasKey(x => x.Id);
 
-        
         builder
             .Property(x => x.Id)
-            .HasColumnName("category_id")
-            .IsRequired();
-        
+            .HasColumnName("category_id");
         builder
             .HasIndex(x => x.Title)
             .IsUnique()
@@ -52,9 +49,9 @@ public class CategoryEntityConfiguration
         new List<CategoryEntity>
         {
             new CategoryEntity(1, "Математический анализ"),
-            new CategoryEntity(2, "Линейная алгебра"),
-            new CategoryEntity(3, "Философия"),
-            new CategoryEntity(4, "История России"),
-            new CategoryEntity(5, "Физика")
+            new CategoryEntity(2,"Линейная алгебра"),
+            new CategoryEntity(3,"Философия"),
+            new CategoryEntity(4,"История России"),
+            new CategoryEntity(5,"Физика")
         };
 }

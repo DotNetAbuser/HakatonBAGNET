@@ -3,13 +3,11 @@
 public class ReactionEntity : BaseEntity<Guid>
 {
     public ReactionEntity(
-        Guid id,
         int userId,
         Guid questionId,
         Guid answerId,
         bool isLiked)
     {
-        Id = id;
         UserId = userId;
         QuestionId = questionId;
         AnswerId = answerId; 
