@@ -1,14 +1,9 @@
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types
-from aiogram.filters import Command
-from aiogram import F
-import requests
-import json
-from KeyBoards import kbn, kb1, kbn2, kb2, kbn1, kbn3, kb0, kb3
 from settings import config
-from ManagerAPI.get_request import *
 from handlers import callbacks, commands
+from TelegramBot.Src.dataBase.dbalchemy import DBManager
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -16,6 +11,8 @@ logging.basicConfig(level=logging.INFO)
 # Инициализация бота и диспетчера
 bot = Bot(token=config.TOKEN)
 dp = Dispatcher()
+DB = DBManager()
+DB.get_all_models()
 
 commands.register(dp=dp)
 callbacks.register(dp=dp)
