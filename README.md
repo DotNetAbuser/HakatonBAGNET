@@ -34,6 +34,8 @@
 * requests 
 * asyncio
 * json
+* SQLAlchemy
+* psycopg2
 
 ## Инструкция по запуску проекта
 
