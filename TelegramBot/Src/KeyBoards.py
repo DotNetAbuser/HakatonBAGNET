@@ -1,13 +1,13 @@
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-
+from ManagerAPI.get_request import get_category
 
 # Для отправки HTTP запросов в API ASP.NET
 
 def create_inline_keyboard(buttons):
     keyboard = InlineKeyboardBuilder()
     for button in buttons:
-        keyboard.add(types.InlineKeyboardButton(text=button['text'], callback_data=button['callback_data']))
+        keyboard.row(types.InlineKeyboardButton(text=button['text'], callback_data=button['callback_data']))
     return keyboard
 
 
@@ -23,7 +23,7 @@ main_menu_buttons = [
     {'text': 'Мои вопросы', 'callback_data': 'my_vopr'},
     {'text': 'Мои ответы', 'callback_data': 'my_otv'},
     {'text': 'Общий рейтинг', 'callback_data': 'my_score'},
-    {'text': 'Форум', 'callback_data': 'my_vopr'},
+    {'text': 'Форум', 'callback_data': 'forum'},
 ]
 
 kb0 = create_inline_keyboard(main_menu_buttons)
@@ -34,6 +34,15 @@ forum_buttons = [
     {'text': 'Назад', 'callback_data': 'back'},
 ]
 kb1 = create_inline_keyboard(forum_buttons)
+
+categorys = get_category()
+category_buttons = []
+for category in categorys:
+    category_buttons.append({'text': f'{category["title"]}', 'callback_data': f'{category["category_id"]}'})
+
+category_buttons.append({'text': 'Назад', 'callback_data': 'forum'})
+ask_question = create_inline_keyboard(category_buttons)
+
 
 kb2_buttons = [
     {'text': 'Математика', 'callback_data': 'v_mat'},
@@ -50,3 +59,5 @@ kb3_buttons = [
     {'text': 'Назад', 'callback_data': 'back'},
 ]
 kb3 = create_inline_keyboard(kb3_buttons)
+
+

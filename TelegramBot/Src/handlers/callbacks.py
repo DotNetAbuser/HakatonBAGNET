@@ -1,7 +1,11 @@
-from aiogram import types
+import json
+
+import requests
+
+from TelegramBot.Src.ManagerAPI.get_request import get_response, deserializer
+from TelegramBot.Src.KeyBoards import kbn, kb1, kbn2, kb2, kb0, kb3, ask_question
 from aiogram import F
-from KeyBoards import kbn, kb1, kbn2, kb2, kbn1, kbn3, kb0, kb3
-from ManagerAPI.get_request import get_response, deserializer
+from aiogram import types
 
 
 async def handle_my_vopr(callback: types.CallbackQuery):
@@ -51,7 +55,7 @@ async def handle_back(callback: types.CallbackQuery):
 
 
 async def handle_vopr(callback: types.CallbackQuery):
-    await callback.message.answer("Выберите тему вопроса:", reply_markup=kb3.as_markup())
+    await callback.message.answer("Выберите тему вопроса:", reply_markup=ask_question.as_markup())
     await callback.message.delete()
 
 
@@ -77,7 +81,7 @@ def register(dp):
     dp.callback_query.register(handle_forum, F.data == 'forum')
     dp.callback_query.register(handle_back, F.data == 'back')
     dp.callback_query.register(handle_vopr, F.data == 'vopr')
-    dp.callback_query.register(handle_subject_vopr, F.data.in_(['mat', 'fiz', 'inf']))  # Темы для вопросов
+    dp.callback_query.register(handle_subject_vopr, F.data.in_(['1', '2', '3', '4', '5']))  # Темы для вопросов
     dp.callback_query.register(handle_otv, F.data == 'otv')
     dp.callback_query.register(handle_subject_otv, F.data.in_(['v_mat', 'v_fiz', 'v_inf']))  # Темы для ответов
     dp.callback_query.register(handle_back, F.data == 'back1')

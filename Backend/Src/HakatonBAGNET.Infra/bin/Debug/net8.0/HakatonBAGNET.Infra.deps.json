@@ -182,7 +182,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.8"
         },
         "runtime": {
-          "HakatonBAGNET.Application.dll": {}
+          "HakatonBAGNET.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HakatonBAGNET.Domain/1.0.0": {
@@ -192,12 +195,18 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.8"
         },
         "runtime": {
-          "HakatonBAGNET.Domain.dll": {}
+          "HakatonBAGNET.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HakatonBAGNET.Models/1.0.0": {
         "runtime": {
-          "HakatonBAGNET.Models.dll": {}
+          "HakatonBAGNET.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

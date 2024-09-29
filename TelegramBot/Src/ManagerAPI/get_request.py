@@ -14,3 +14,11 @@ def get_response(url):
 
 def deserializer(data):
     return json.loads(data)
+
+
+def get_category():
+    api_url = 'http://localhost:8001/api/Category/get-all'
+    response = requests.get(api_url).text
+    result = json.loads(response)
+    categores = result['data']
+    return categores

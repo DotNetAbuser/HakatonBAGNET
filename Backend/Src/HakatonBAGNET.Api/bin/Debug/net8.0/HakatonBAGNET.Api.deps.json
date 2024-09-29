@@ -531,12 +531,6 @@
       "System.Text.Json/8.0.4": {
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
         }
       },
       "System.Threading.Channels/6.0.0": {},
@@ -548,7 +542,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.8"
         },
         "runtime": {
-          "HakatonBAGNET.Application.dll": {}
+          "HakatonBAGNET.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HakatonBAGNET.Domain/1.0.0": {
@@ -558,7 +555,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.8"
         },
         "runtime": {
-          "HakatonBAGNET.Domain.dll": {}
+          "HakatonBAGNET.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HakatonBAGNET.Infra/1.0.0": {
@@ -566,12 +566,18 @@
           "HakatonBAGNET.Application": "1.0.0"
         },
         "runtime": {
-          "HakatonBAGNET.Infra.dll": {}
+          "HakatonBAGNET.Infra.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HakatonBAGNET.Models/1.0.0": {
         "runtime": {
-          "HakatonBAGNET.Models.dll": {}
+          "HakatonBAGNET.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

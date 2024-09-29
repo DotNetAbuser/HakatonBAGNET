@@ -1,43 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj": {}
+    "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj": {
+    "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj",
+        "projectUniqueName": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj",
         "projectName": "HakatonBAGNET.Application",
-        "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj",
-        "packagesPath": "C:\\Users\\ilyao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\obj\\",
+        "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj",
+        "packagesPath": "C:\\Users\\Andrei Ostashov\\.nuget\\packages\\",
+        "outputPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ilyao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Andrei Ostashov\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj": {
-                "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj"
+              "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj": {
+                "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj"
               },
-              "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj": {
-                "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj"
+              "N:\\Coding\\hatakon\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj": {
+                "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj"
               }
             }
           }
@@ -82,33 +75,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj": {
+    "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj",
+        "projectUniqueName": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj",
         "projectName": "HakatonBAGNET.Domain",
-        "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj",
-        "packagesPath": "C:\\Users\\ilyao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\obj\\",
+        "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\HakatonBAGNET.Domain.csproj",
+        "packagesPath": "C:\\Users\\Andrei Ostashov\\.nuget\\packages\\",
+        "outputPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ilyao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Andrei Ostashov\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -161,41 +147,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj": {
+    "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj",
+        "projectUniqueName": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj",
         "projectName": "HakatonBAGNET.Infra",
-        "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj",
-        "packagesPath": "C:\\Users\\ilyao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\obj\\",
+        "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\HakatonBAGNET.Infra.csproj",
+        "packagesPath": "C:\\Users\\Andrei Ostashov\\.nuget\\packages\\",
+        "outputPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Infra\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ilyao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Andrei Ostashov\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj": {
-                "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj"
+              "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj": {
+                "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Backend\\Src\\HakatonBAGNET.Application\\HakatonBAGNET.Application.csproj"
               }
             }
           }
@@ -230,33 +209,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj": {
+    "N:\\Coding\\hatakon\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj",
+        "projectUniqueName": "N:\\Coding\\hatakon\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj",
         "projectName": "HakatonBAGNET.Models",
-        "projectPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj",
-        "packagesPath": "C:\\Users\\ilyao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilyao\\Desktop\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\obj\\",
+        "projectPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\HakatonBAGNET.Models.csproj",
+        "packagesPath": "C:\\Users\\Andrei Ostashov\\.nuget\\packages\\",
+        "outputPath": "N:\\Coding\\hatakon\\HakatonBAGNET\\Shared\\Src\\HakatonBAGNET.Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ilyao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Andrei Ostashov\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -295,7 +267,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

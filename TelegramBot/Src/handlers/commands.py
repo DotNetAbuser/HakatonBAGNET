@@ -5,10 +5,10 @@ from aiogram.filters import Command
 from aiogram import F
 import requests
 import json
-from KeyBoards import kbn, kb1, kbn2, kb2, kbn1, kbn3, kb0, kb3
-from settings import config
-from ManagerAPI.get_request import *
-from ManagerAPI import *
+from TelegramBot.Src.KeyBoards import kbn, kb1, kbn2, kb2, kbn1, kbn3, kb0, kb3
+from TelegramBot.Src.settings import config
+from TelegramBot.Src.ManagerAPI.get_request import *
+from TelegramBot.Src.ManagerAPI import *
 
 
 async def cmd_start(message: types.Message):

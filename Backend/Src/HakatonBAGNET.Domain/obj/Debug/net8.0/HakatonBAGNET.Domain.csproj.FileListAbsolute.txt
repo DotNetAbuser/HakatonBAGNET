@@ -11,3 +11,16 @@ C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.pdb
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\ref\HakatonBAGNET.Domain.dll
 C:\Users\ilyao\Desktop\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.sourcelink.json
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\bin\Debug\net8.0\HakatonBAGNET.Domain.deps.json
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\bin\Debug\net8.0\HakatonBAGNET.Domain.dll
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\bin\Debug\net8.0\HakatonBAGNET.Domain.pdb
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.csproj.AssemblyReference.cache
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.GeneratedMSBuildEditorConfig.editorconfig
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.AssemblyInfoInputs.cache
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.AssemblyInfo.cs
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.csproj.CoreCompileInputs.cache
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.sourcelink.json
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.dll
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\refint\HakatonBAGNET.Domain.dll
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\HakatonBAGNET.Domain.pdb
+N:\Coding\hatakon\HakatonBAGNET\Backend\Src\HakatonBAGNET.Domain\obj\Debug\net8.0\ref\HakatonBAGNET.Domain.dll
